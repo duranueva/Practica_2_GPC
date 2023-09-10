@@ -1,18 +1,22 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/css/style.css">
+        <!--apache server <link rel="stylesheet" href="/css/style.css">-->
+        <!--git--><link rel="stylesheet" href="css/style.css">
     </head>
-
     <body>
+        <!-- Create the form -->
         <form action="/cgi-bin/index.py" method="get">
 <!--    <form action="/cgi-bin/index.py" method="post"> -->
-            User: <input type="text"     name="user"   ></br>
-            Pass: <input type="password" name="pass"   ></br>
-	          <input type="submit"   value="enviar">
-        </form>
+            <label for="username">Username:<br>
+            <input type="text"  id="username"   name="username"   ></br>
 
+            <label for="password">Password:<br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <button type="submit" value="enviar">Login
+        </form> 
 
         <script src="/js/script.js"></script>
-
     </body>
 </html>
